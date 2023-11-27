@@ -14,6 +14,3 @@ use App\Http\Controllers\ContectController;
 */
 
 Route::get('/', [ContactController::class, 'index']);
-Route::get('/', function () {
-    return view('welcome');
-});
