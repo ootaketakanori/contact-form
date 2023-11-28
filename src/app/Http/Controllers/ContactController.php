@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function index()
+    public function confirm(Request $request)
     {
-        return view('index');
+        $contact = $request->only(['name', 'email', 'tel', 'content']);
+        return $contact;
     }
 }

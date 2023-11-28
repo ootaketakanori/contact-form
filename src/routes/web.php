@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContectController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +13,5 @@ use App\Http\Controllers\ContectController;
 |
 */
 
+Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::get('/', [ContactController::class, 'index']);
